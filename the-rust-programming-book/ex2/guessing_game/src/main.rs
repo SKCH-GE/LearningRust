@@ -9,13 +9,15 @@ fn main() {
     // let creates a variable, by default immutable
     let mut guess = String::new();
     let secret_number= rand::thread_rng().gen_range(1,101);
-    // guess = guess.parse().unwrap();
-
+    
     io::stdin() .read_line(&mut guess)
                 // Chapter 4 will better explain how references "&" work
                 .expect("Failed to read line");
                 // this applies to read_line like "io::stdin().read_line(&mut guess).expect("Failed to read line");"
 
+    let guess:u32 = guess.trim().parse()
+                        .expect("Please type a number");
+    
     match guess.cmp(&secret_number) {
         Ordering::Equal => println!("You win!"),
         Ordering::Greater => println!("Too big!"),
