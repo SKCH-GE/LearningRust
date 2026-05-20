@@ -5,3 +5,4 @@ authors = ["Chiheb-Eddine SAKLY <saklychiheb45@gmail.com>"]
 edition = "2024"
 
 [dependencies]
+rand = "0.10.1" 
