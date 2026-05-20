@@ -1,0 +1,68 @@
+   0.050217800s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\dev\\learningRust\\the-rust-programming-book\\ex2\\guessing_game\\src\\main.rs", Edition2024) }
+   0.050411600s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game\target\debug\.fingerprint\guessing_game-fcd0059dc58de59b\bin-guessing_game`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: <std::backtrace::Backtrace>::capture
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+   0.109461400s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\dev\\learningRust\\the-rust-programming-book\\ex2\\guessing_game\\src\\main.rs", Edition2024) }
+   0.109529300s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game\target\debug\.fingerprint\guessing_game-8f98a6d82c044cdf\test-bin-guessing_game`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: <std::backtrace::Backtrace>::capture
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::cli::main
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\core\src\ops/function.rs:287:21
+  18: main
+  19: __tmainCRTStartup
+  20: mainCRTStartup
+  21: <unknown>
+  22: <unknown>
+    Checking guessing_game v0.1.0 (C:\dev\learningRust\the-rust-programming-book\ex2\guessing_game)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.21s
