@@ -32,7 +32,5 @@ fn main() {
     
         println!("You guessed {}", guess);
         println!("the secret number: {}", secret_number);
-    }
-
-        
+    }  
 }
